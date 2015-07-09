@@ -1,4 +1,11 @@
- <ui-gmap-google-map center="map.center" options="options" zoom="map.zoom">
-  <ui-gmap-search-box template="searchbox.template" events="searchbox.events"></ui-gmap-search-box>
-  <button id="submit" ng-click="placeSearchMarker()">Search</button>
-</ui-gmap-google-map>
+  <ui-gmap-google-map center='map.center' zoom='map.zoom' draggable="true" options="options">
+
+    <ui-gmap-search-box template="searchbox.template" events="searchbox.events"></ui-gmap-search-box>
+
+    <ui-gmap-markers models="markers" coords="'self'" icon="'icon'">
+    </ui-gmap-markers>
+
+ </ui-gmap-google-map>
+
+<p>$scope.tomd:  {{tomd}}</p>
+<p>$scope.markers:  {{markers}}</p>
