@@ -7,29 +7,39 @@
       areaLng = -100.2471641,
       areaZoom = 3;
 
-    this.markers = [];
-    $scope.marker = {};
-    $scope.markers = [];
+    // this.markers = [];
+    // $scope.marker = {};
+    // $scope.markers = [];
+
+    //attribute an ID to each location
+    $scope.count = 0;
 
     var events = {
       places_changed: function(searchBox) {
-        var location = searchBox.getPlaces();
-        console.log(location[0].geometry.location.D)
-        console.log(location[0].geometry.location.k)
-        var marker = {
-          latitude: location[0].geometry.location.D,
-          longitude: location[0].geometry.location.k,
-          title: "our first marker",
-          id: 1
-        };
-        $scope.markers.push(marker);
+        var query = searchBox.getPlaces()[0];
+        //create array for location
+        var artLocation = {};
+        //Get latitude and longitude from google maps search
+        artLocation.latitude = query.geometry.location.k;
+        artLocation.longitude = query.geometry.location.D;
+        //increase id count
+        $scope.count++;
+        //set id equal to scope
+        artLocation.id = $scope.count;
+        artLocation.title = location.formatted_address;
+        // push id into art array locations
+        $scope.artLocations.push(artLocation);
+        console.log(query);
       }
-    };
+    }
 
     $scope.searchbox = {
       template: 'searchbox.tpl.html',
       events: events
     };
+
+    $scope.artLocations = [];
+
 
     // // map marker
     // $scope.marker = {
