@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="mapApp">
  <head>
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
@@ -11,10 +11,14 @@
   <script src="app/libraries/angular-google-maps.min.js"></script>
   <script src="app/app.js"></script>
   <script src="app/controllers/mapController.js"></script>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/stylesheets/font-awesome-animation.min.css">
+<!--   Import the controllers -->
+  <script type='text/javascript' src='app/controllers/mapController.js'></script>
 
  </head>
 
- <body ng-app="mapApp">
+ <body >
   <div id="map_canvas" ng-controller="mapController">
     <script type="text/ng-template" id="searchbox.tpl.html">
       <input type="text" placeholder="Search Box"></input>

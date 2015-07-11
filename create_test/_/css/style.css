@@ -5,3 +5,15 @@
 #canvas {
   background-color: #cccccc;
 }
+
+#test-obj {
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+}
+
+#test-container {
+   height: 300px;
+  width: 300px;
+  color: gray;
+}

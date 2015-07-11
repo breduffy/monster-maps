@@ -16,6 +16,12 @@
           templateUrl: 'app/views/map.html'
         })
 
+      $routeProvider
+        .when('/home', {
+          controller: 'homeController as homeController',
+          templateUrl: 'app/views/home.html'
+        })
+
     }
   ]);
 
