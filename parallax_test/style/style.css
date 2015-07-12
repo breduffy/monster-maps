@@ -34,13 +34,50 @@ nav {
 }
 
 #hero {
-  background-color: #B8E2DD;
+  background-color: #3295E0;
   text-align: center;
   height: 450px;
   padding: 0px !important;
   font-family: 'Archivo Black', sans-serif;
-        font-size: 48px;
+
 }
+
+#bird{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: bird;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-delay: 5s;
+  left: -100px;
+}
+
+#bird2{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: bird2;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+  left: -100px;
+}
+
+/* The animation code */
+@keyframes bird {
+  0%   {left:-100px; top:50px;}
+  100%  {left: 1400px; top:200px;}
+}
+
+/* The animation code */
+@keyframes bird2 {
+  0%   {left:-100px; top:150px;}
+  100%  {left: 1400px; top:10px;}
+}
+
 
 #about{
   height: 1000px;
@@ -51,13 +88,14 @@ nav {
 /*Paralax attempt*/
 
 #layer1img {
-  height: 400px;
+  height: 370px;
   z-index: 6;
   position: absolute;
   left: 0px; /* align left edge with center of viewport */
-  top: 60px;
+  top: 90px;
   margin-left: 0px; /* move left by half element's width */
 }
+
 #layer2img {
   height: 500px;
   z-index: 5;
@@ -67,44 +105,89 @@ nav {
   margin-left: 0px; /* move left by half element's width */
 }
 
+#layer3{
+  z-index: 4;
+  position: fixed;
+  left: 80%; /* align left edge with center of viewport */
+  top: 0;
+  width: 1200px;
+  margin-left: -700px;
+}
+
 #layer3img {
+  position: absolute;
+  top: 356px;
+  left: 0px;
   height: 100px;
   width: 700px;
-  z-index: 4;
-  position: absolute;
-  left: 20%;
-  top: 366px;
-  margin-left: 0px; /* move left by half element's width */
+}
+
+#layer4{
+  z-index: 3;
+  position: fixed;
+  left: 90%; /* align left edge with center of viewport */
+  top: 0;
+  margin-left: -750px;
 }
 
 #layer4img {
-  height:300px;
-  z-index: 3;
-  position: fixed;
-  left: 20%; /* align left edge with center of viewport */
-  top: 161px;
+  position: absolute;
+  top: 180px;
+  /*left: 100px;*/
+  height: 350px;
   width: 300px;
-  margin-left: 0px;
+}
+
+#layer5{
+  z-index: 2;
+  position: fixed;
+  left: 50%; /* align left edge with center of viewport */
+  top: 0;
+  margin-left: -700px;
 }
 
 #layer5img {
- height:100px;
-  z-index: 2;
-  position: fixed;
-  left: 0%; /* align left edge with center of viewport */
-  top: 330px;
-  width: 1000px;
-  margin-left: 0px;
+  position: absolute;
+  top: 300px;
+  /*left: 100px;*/
+  height: 80px;
+  width: 1400px;
 }
 
-#layer6img {
-  height: 100px;
-  width: 1300px;
+#layer6{
   z-index: 1;
   position: fixed;
-  left: 0%;
-  top: 300px;
-  margin-left: 0px; /* move left by half element's width */
+  left: 50%; /* align left edge with center of viewport */
+  top: 0;
+  margin-left: -700px;
+}
+
+
+#layer6img {
+  position: absolute;
+  top: 250px;
+  /*left: 100px;*/
+  height: 100px;
+  width: 1600px;
+
+}
+
+#layer7{
+  z-index: 0;
+  position: fixed;
+  left: 80%; /* align left edge with center of viewport */
+  top: 0;
+  margin-left: -200px;
+}
+
+
+#layer7img {
+  position: absolute;
+  top: 180px;
+  /*left: 100px;*/
+  height: 200px;
+  width: 200px;
+
 }
 
 #marker {
@@ -130,7 +213,7 @@ nav {
   z-index: 4;
   position: fixed;
   left: 15%;
-  top: 330px;
+  top: 350px;
   margin-left: 0px;
 }
 

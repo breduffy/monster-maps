@@ -105,7 +105,7 @@ $(document).ready(function() {
     event.addEventListener("mousemove", function(event) {
 
       // Draw a round line from the last position to the current one.
-      drawing.graphics.ss(8, "round").s("#fffffff");
+      drawing.graphics.ss(6, "round").s("#000066");
       drawing.graphics.mt(lastPoint.x, lastPoint.y);
       drawing.graphics.lt(event.stageX, event.stageY);
 
