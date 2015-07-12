@@ -59,7 +59,7 @@ nav {
   animation-duration: 7s;
   animation-iteration-count: infinite;
   animation-delay: 5s;
-  left: -600px;
+  left: -700px;
   z-index: 3;
 }
 
@@ -70,7 +70,7 @@ nav {
   animation-duration: 7s;
   animation-iteration-count: infinite;
   animation-delay: 2s;
-  left: -600px;
+  left: -700px;
   z-index: 5;
 }
 
@@ -108,7 +108,7 @@ nav {
   height: 500px;
   z-index: 9;
   position: absolute;
-  left: 70%;
+  left: 50%;
   top: 7px;
   margin-left: 0px; /* move left by half element's width */
 }
@@ -235,16 +235,16 @@ nav {
 
 #marker {
   height: 100px;
-  z-index: 11;
+  z-index: 9;
   position: fixed;
   left: 70%;
-  top: 290px;
+  top: 280px;
   margin-left: 0px;
 }
 
 #marker1 {
   height: 60px;
-  z-index: 12;
+  z-index: 9;
   position: fixed;
   left: 50%;
   top: 260px;
@@ -253,13 +253,39 @@ nav {
 
 #marker2 {
   height: 40px;
-  z-index: 13;
+  z-index: 9;
   position: fixed;
   left: 15%;
   top: 350px;
   margin-left: 0px;
 }
 
+#about{
+  color: #FCFBE3;
+}
+
+#sketch-img{
+  z-index:2;
+  height:220px;
+}
+
+#sketch-text{
+  z-index:2;
+  position:absolute;
+  margin-left: 50px;
+  margin-top: 100px;
+}
+
+#track-img{
+  z-index:1;
+  height:220px;
+}
+#track-text{
+  z-index:2;
+  position:absolute;
+  margin-left: 65px;
+  margin-top: 100px;
+}
 
 /*Colors*/
 .backgroundPrimary-color {
