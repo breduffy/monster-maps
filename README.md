@@ -17,17 +17,34 @@ This project is an experiment in a few things I wanted to learn:
 
 #ROUTES
 
+WITH USER:
 POST - /register
 GET/PATCH/DEL - /user/:username
-POST/GET/ - /user/:username/nopes
-GET/PATCH/DEL - /user/:username/nopes/:id
-GET/POST - /user/:username/nopes/:id/comments
-PATCH/DEL - /user/:username/nopes/:post_id/comments/:id
+POST/GET/ - /user/:username/monsters
+GET/PATCH/DEL - /user/:username/monsters/:id
+
+WITHOUT USER:
+GET/POST - /monsters
+GET- /monsters/:id
+POST/GET/ - /locations/monsters/:id
+
 
 
 #SCHEMAS
 
-1. Post Schema
+1. Monster Schema
+  * sketch: string, req
+  * name: string, req
+  * description: string
+  * location: string, req
+  * user: [user schema]
+
+(ADD LATER)
+2. User Schema
+  * username: string, req
+  * name: string, req
+  * email: string, req
+  * monsters: [monster schema]
 
 
 #WIREFRAMES

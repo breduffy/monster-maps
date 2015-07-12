@@ -6,6 +6,29 @@ $(document).ready(function() {
   //Get Bootstrap dropdowns to work
   $('.dropdown-toggle').dropdown()
 
+  //Bran scrolls to top
+  $('#birdbrand').click(function() {
+    $("html, body").animate({
+      scrollTop: 0
+    }, 500);
+    return false;
+  });
+
+  //scroll to sketch a monster
+  $('#sketch-button').click(function(e) {
+    e.preventDefault();
+    $('html, body').animate({
+      scrollTop: $("#sketch-area").offset().top
+    }, 500);
+  });
+
+  //scroll to track a monster
+  $('#track-button').click(function(e) {
+    e.preventDefault();
+    $('html, body').animate({
+      scrollTop: $("#track-monster-area").offset().top
+    }, 500);
+  });
 
   /* Scroll event handler */
   $(window).bind('scroll', function(e) {

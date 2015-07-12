@@ -15,7 +15,7 @@
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
       <!-- Latest compiled and animate.CSS -->
     <link rel="stylesheet" href="style/animate.min.css">
 
@@ -28,6 +28,8 @@
     <link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Archivo+Black' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
+    <!-- Link to font awesome -->
+    <link rel="style" href="style/font-awesome-animation.min.css">
 
 
 
@@ -35,33 +37,35 @@
 
  <body >
 
+<!--  <div class="arrow">
+      <img id="arrow" src="images/arrow.png" alt="layer 1"/>
+    </div> -->
+
  <!-- Begin nav bar here -->
   <nav class="navbar navbar-default">
     <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
+      <!-- Brand and toggle get grouped for better mobile display if you add more links!-->
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+      <!--   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Monster Maps</a>
+        </button> -->
+        <a class="navbar-brand" href="#"><img id="birdbrand" src="images/birdbrand.png" alt="layer 1"/></a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
         <ul class="nav navbar-nav navbar-right">
-          <li>
-            <i class="fa fa-user fa-sm"></i>
-          </li>
           <li id="nav-user-icon">
-            <a href="#">Welcome!</a>
+            <a href="#">
+            </a>
           </li>
 
           <li>
-            <a href="#"><button type="button" data-toggle="modal" data-target="#uploadArt" class="js-signupform-button"> Sketch a Monster</button></a>
+            <!-- <a href="#"><button type="button" data-toggle="modal" data-target="#uploadArt" class="js-signupform-button"> Sketch a Monster</button></a> -->
 
             <!-- <a href="#"><button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
             Upload Art
@@ -138,18 +142,55 @@
 
 
 
-  <!--Begin Filters section-->
+  <!--Begin about section-->
   <div id= "about" class="col-xs-12 padding-xl">
-    <div id="sketch" class="col-xs-12 col-xs-offset-1 col-sm-4 col-sm-offset-2">
-      <h5 id="sketch-text">Sketch</h5>
-      <img id="sketch-img" class="marker animate bounceIn" src="images/sketch.png"/>
+    <div id="sketch" class="col-xs-12 col-xs-offset-1 col-sm-4 col-sm-offset-2 paddingTop-md paddingBottom-xl">
+      <a id="sketch-button" class=" about-menu textPrimary-white" href="#">
+        <h5 id="sketch-text">Sketch</h5>
+        <img id="sketch-img" class="" src="images/sketch.png"/>
+      </a>
     </div>
-    <div id="track-img" class="col-xs-12 col-xs-offset-1 col-sm-4 col-sm-offset-1">
-      <h5 id="track-text">Track</h5>
-      <img id="sketch-img" class="marker" src="images/track.png"/>
-    </div>
-  </div> <!--End filters section-->
 
+    <div id="track-img" class="col-xs-12 col-xs-offset-1 col-sm-4 col-sm-offset-1 paddingTop-md paddingBottom-xl">
+      <a id="track-button" class="about-menu textPrimary-white" href="#">
+        <h5 id="track-text">Track</h5>
+        <img id="sketch-img" class="" src="images/track.png"/>
+      </a>
+    </div>
+   <!--  this breaks the parallax for some reason -->
+<!--     <div id="about-land" >
+      <img src="images/about_land.png"/>
+    </div> -->
+  </div> <!--End about section-->
+
+  <!--Begin sketch section-->
+  <div id= "sketch-area" class="col-xs-12 padding-xl">
+    <h5 id="">Sketch A Monster</h5>
+  </div>
+
+  <div id= "sketch-area-stamps" class="col-xs-12 padding-xl">
+    <h3 id="">this is where the stamps will go</h3>
+  </div>
+
+    <div id= "sketch-area-canvas" class="col-xs-12 padding-xl">
+    <h3 id="">this is where the canvas will go</h3>
+  </div>
+
+  <!--Begin sketch section-->
+  <div id= "about-monster-area" class="col-xs-12 padding-xl">
+    <h5 id="">About My Monster</h5>
+    <h3 id="">Monster Forms</h3>
+  </div>
+
+   <!--Begin sketch section-->
+  <div id= "track-monster-area" class="col-xs-12 padding-xl">
+    <h5 id="">Track A Monster (consider making a new page)</h5>
+    <h3 id="">This is where the google map will go with the hover states</h3>
+  </div>
+
+    <div id= "footer" class="col-xs-12 padding-xl textPrimary-white">
+    <h3 id="">footer</h3>
+  </div>
 
 </body>
 
