@@ -10,10 +10,25 @@ This project is an experiment in a few things I wanted to learn:
 5. Dynamic drawing with svg
 
 ##USER STORIES
-1. A user should be able to search and filter through art in a particular city.
+1. A user should be able to create a new monster by stamping and drawing
   Priority: 1
   Difficulty: 5
-    Iteration: 1
+  Iteration: 1
+
+2. A user should be able to describe the new monster
+  Priority: 2
+  Difficulty: 3
+  Iteration: 1
+
+3. A user should be able to enter a location in googlemaps
+  Priority: 2
+  Difficulty: 5
+  Iteration: 2
+
+4. A user should be able to view other monsters through googlemaps
+  Priority: 3
+  Difficulty: 5
+  Iteration: 3
 
 #ROUTES
 
@@ -49,3 +64,4 @@ POST/GET/ - /locations/monsters/:id
 
 #WIREFRAMES
 note: these may not match exactly as they contain plans for further development
+![wireframe](https://cloud.githubusercontent.com/assets/8007927/8640675/5c583470-28ce-11e5-934a-6cf3f8fe2f0e.png)
