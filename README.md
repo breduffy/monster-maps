@@ -7,6 +7,7 @@ This project is an experiment in a few things I wanted to learn:
 2. CSS Animations
 3. Google Maps API
 4. CreateJS and EaselJS
+5. Dynamic drawing with svg
 
 ##USER STORIES
 1. A user should be able to search and filter through art in a particular city.
