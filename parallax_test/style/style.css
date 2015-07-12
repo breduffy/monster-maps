@@ -34,16 +34,105 @@ nav {
 }
 
 #hero {
-  background-color: #99CCFF;
+  background-color: #B8E2DD;
   text-align: center;
-  height: 500px;
+  height: 450px;
+  padding: 0px !important;
+  font-family: 'Archivo Black', sans-serif;
+        font-size: 48px;
 }
 
 #about{
   height: 1000px;
+  z-index: 100;
+  background-color: #ffffff;
 }
 
+/*Paralax attempt*/
 
+#layer1img {
+  height: 400px;
+  z-index: 6;
+  position: absolute;
+  left: 0px; /* align left edge with center of viewport */
+  top: 60px;
+  margin-left: 0px; /* move left by half element's width */
+}
+#layer2img {
+  height: 500px;
+  z-index: 5;
+  position: absolute;
+  left: 70%;
+  top: 7px;
+  margin-left: 0px; /* move left by half element's width */
+}
+
+#layer3img {
+  height: 100px;
+  width: 700px;
+  z-index: 4;
+  position: absolute;
+  left: 20%;
+  top: 366px;
+  margin-left: 0px; /* move left by half element's width */
+}
+
+#layer4img {
+  height:300px;
+  z-index: 3;
+  position: fixed;
+  left: 20%; /* align left edge with center of viewport */
+  top: 161px;
+  width: 300px;
+  margin-left: 0px;
+}
+
+#layer5img {
+ height:100px;
+  z-index: 2;
+  position: fixed;
+  left: 0%; /* align left edge with center of viewport */
+  top: 330px;
+  width: 1000px;
+  margin-left: 0px;
+}
+
+#layer6img {
+  height: 100px;
+  width: 1300px;
+  z-index: 1;
+  position: fixed;
+  left: 0%;
+  top: 300px;
+  margin-left: 0px; /* move left by half element's width */
+}
+
+#marker {
+  height: 100px;
+  z-index: 4;
+  position: fixed;
+  left: 70%;
+  top: 290px;
+  margin-left: 0px;
+}
+
+#marker1 {
+  height: 60px;
+  z-index: 2;
+  position: fixed;
+  left: 50%;
+  top: 260px;
+  margin-left: 0px;
+}
+
+#marker2 {
+  height: 40px;
+  z-index: 4;
+  position: fixed;
+  left: 15%;
+  top: 330px;
+  margin-left: 0px;
+}
 
 
 /*Colors*/
