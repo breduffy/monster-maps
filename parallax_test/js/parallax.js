@@ -21,7 +21,9 @@ $(document).ready(function() {
     $('#layer4').css('top', (0 - (scrolled * .5)) + 'px');
     $('#layer5').css('top', (0 - (scrolled * .4)) + 'px');
     $('#layer6').css('top', (0 - (scrolled * .2)) + 'px');
-    $('#layer7').css('top', (0 - (scrolled * .15)) + 'px');
+    $('#layer7').css('top', (0 - (scrolled * .1)) + 'px');
+    $('#layer8').css('top', (0 - (scrolled * .05)) + 'px');
+    $('#layer9').css('top', (0 - (scrolled * .03)) + 'px');
   }
 
 
