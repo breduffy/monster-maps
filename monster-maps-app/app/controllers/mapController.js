@@ -1,5 +1,7 @@
 (function mapControllerIIFE() {
 
+  //TO DO: ADD GEO-LOCATION SO THE IMAGE POPULATES ON SUBMIT
+
   var MapController = function($scope, $log, $timeout, uiGmapGoogleMapApi) {
 
     // Define variables for our Map object
