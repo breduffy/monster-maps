@@ -6,13 +6,29 @@ $(document).ready(function() {
   //Get Bootstrap dropdowns to work
   $('.dropdown-toggle').dropdown()
 
-  //Bran scrolls to top
+  //Brand scrolls to top
   $('#birdbrand').click(function() {
     $("html, body").animate({
       scrollTop: 0
     }, 500);
     return false;
   });
+
+  //Scroll green pencil icon scroll to sketch area: DOES NOT WORK
+  // $('.green-icon-pencil').click(function(e) {
+  //   e.preventDefault();
+  //   $('html, body').animate({
+  //     scrollTop: $("#sketch-monster-area").offset().top
+  //   }, 500);
+  // });
+
+  // //Scroll green pencil icon scroll to track area: DOES NOT WORK
+  // $('.green-icon-pencil').click(function(e) {
+  //   e.preventDefault();
+  //   $('html, body').animate({
+  //     scrollTop: $("#track-monster-area").offset().top
+  //   }, 500);
+  // });
 
   //scroll to sketch a monster
   $('#content').on('click', '#sketch-button', function(e) {
@@ -26,7 +42,7 @@ $(document).ready(function() {
   $('#content').on('click', '#track-button', function(e) {
     e.preventDefault();
     $('html, body').animate({
-      scrollTop: $("#track-monster-area").offset().top
+      scrollTop: $("#track-monster-area-title").offset().top
     }, 500);
   });
 

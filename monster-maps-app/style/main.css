@@ -116,7 +116,6 @@
   z-index: 30; }
 
 #about-monster-area {
-  height: 300px;
   background-color: #C5CDA0;
   z-index: 30; }
 
@@ -287,7 +286,7 @@
 #about {
   color: #FCFBE3; }
 
-#sketch-img {
+.sketch-img {
   z-index: 2;
   height: 220px; }
 
@@ -890,7 +889,10 @@ h5 {
   font-size: 35px !important;
   line-height: 33px !important;
   padding: 0px !important;
-  margin: 30px !important; }
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 20px; }
 
 @media (min-width: 768px) {
   h5 {
@@ -908,6 +910,13 @@ h5 {
     line-height: 45px !important; } }
 
 /*End header values at different widths*/
+/* mouse over link */
+a:hover {
+  color: #A3BA96; }
+
+#footer {
+  text-align: center; }
+
 .angular-google-map-container {
   height: 400px; }
 
