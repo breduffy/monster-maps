@@ -71,7 +71,7 @@
 
     });
 
-  }
+  };
 
   // MapController.$inject = ['mapFactory', 'appSettings'];
 

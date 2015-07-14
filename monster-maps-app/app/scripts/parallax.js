@@ -15,7 +15,7 @@ $(document).ready(function() {
   });
 
   //scroll to sketch a monster
-  $('#sketch-button').click(function(e) {
+  $('#content').on('click', '#sketch-button', function(e) {
     e.preventDefault();
     $('html, body').animate({
       scrollTop: $("#sketch-area").offset().top
@@ -23,7 +23,7 @@ $(document).ready(function() {
   });
 
   //scroll to track a monster
-  $('#track-button').click(function(e) {
+  $('#content').on('click', '#track-button', function(e) {
     e.preventDefault();
     $('html, body').animate({
       scrollTop: $("#track-monster-area").offset().top

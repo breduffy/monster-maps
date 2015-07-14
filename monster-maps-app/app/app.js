@@ -1,6 +1,7 @@
 (function mapAppIIFE() {
 
-  var app = angular.module('mapApp', ['uiGmapgoogle-maps', 'ngRoute'])
+  var app = angular.module('mapApp', ['uiGmapgoogle-maps', 'ngRoute']);
+
   app.config(['$routeProvider', 'uiGmapGoogleMapApiProvider',
     function($routeProvider, uiGmapGoogleMapApiProvider) {
 

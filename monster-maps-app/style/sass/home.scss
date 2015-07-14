@@ -47,6 +47,23 @@
   z-index: 1000;
 }
 
+.green-icon-pencil{
+  position:fixed;
+  top:0px !important;
+  right:0px !important;
+  z-index: 1000;
+  color: #C5CDA0;
+}
+
+.green-icon-binoculars{
+  position:fixed;
+  top:0px !important;
+  right:60px !important;
+  z-index: 1000;
+  color: #C5CDA0;
+}
+
+
 
 #birdimg1{
   height: 50px;
@@ -99,7 +116,7 @@
 }*/
 
 #sketch-area{
-  height:300px;
+  height:250px;
   background-color: #D7666C;
   z-index:30;
 }
