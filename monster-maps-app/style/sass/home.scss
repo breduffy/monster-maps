@@ -99,6 +99,7 @@
   100%  {left: 1400px; top:-10px;}
 }
 
+//THESE ARE THE LAYERS
 
 #about{
 
@@ -136,6 +137,16 @@
 #about-monster-area{
   background-color: #C5CDA0;
   z-index:30;
+}
+
+#monster-button-area{
+  background-color: #C5CDA0;
+  z-index:30;
+}
+
+#entire-monster-area{
+  background-color: #C5CDA0;
+  z-index:20;
 }
 
 #track-monster-area-title{
@@ -326,6 +337,7 @@
   color: #FCFBE3;
 }
 
+//These are the buttons in the about area that link to the sketch and track area
 .sketch-img{
   z-index:2;
   height:220px;
@@ -347,4 +359,17 @@
   position:absolute;
   margin-left: 65px !important;
   margin-top: 100px !important;
+}
+
+//This is the submit monster button
+.monster-img{
+  z-index:2;
+  height:300px;
+}
+
+#monster-button-text{
+  z-index:2;
+  position:absolute;
+  margin-left: 60px !important;
+  margin-top: 150px !important;
 }

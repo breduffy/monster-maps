@@ -119,6 +119,14 @@
   background-color: #C5CDA0;
   z-index: 30; }
 
+#monster-button-area {
+  background-color: #C5CDA0;
+  z-index: 30; }
+
+#entire-monster-area {
+  background-color: #C5CDA0;
+  z-index: 20; }
+
 #track-monster-area-title {
   background-color: #A3BA96;
   z-index: 30; }
@@ -305,6 +313,16 @@
   position: absolute;
   margin-left: 65px !important;
   margin-top: 100px !important; }
+
+.monster-img {
+  z-index: 2;
+  height: 300px; }
+
+#monster-button-text {
+  z-index: 2;
+  position: absolute;
+  margin-left: 60px !important;
+  margin-top: 150px !important; }
 
 /*Colors as variables*/
 /*Colors as classes*/
