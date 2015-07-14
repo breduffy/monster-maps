@@ -1,0 +1,18 @@
+{
+  "name": "new",
+  "version": "1.0.0",
+  "description": "Author: Breanne Duffy",
+  "main": "index.js",
+  "dependencies": {
+    "grunt-sass": "^1.0.0",
+    "load-grunt-tasks": "^3.2.0",
+    "grunt": "^0.4.5",
+    "lodash": "^3.10.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,334 @@
+// #logo-test{
+//   position:fixed;
+//   top:0px !important;
+//   left:0px !important;
+//   z-index: 100;
+//   height:50px;
+// }
+
+#test-nav{
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+
+/*if decide want arrow at bottom navigation*/
+#arrow{
+  position:fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1000;
+  height:120px;
+}
+
+#hero {
+  background-color: #A3BA96;
+  text-align: center;
+  height: 450px;
+  padding: 0px !important;
+  font-family: 'Archivo Black', sans-serif;
+
+}
+
+.bird{
+  top:20px;
+  z-index: 5;
+}
+
+#hero-title{
+  z-index: 12;
+  color: #FCFBE3;
+}
+
+#birdbrand{
+  height: 50px;
+  position:fixed;
+  top:0px !important;
+  left:0px !important;
+  z-index: 1000;
+}
+
+
+#birdimg1{
+  height: 50px;
+  position: relative;
+  animation-name: bird;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-delay: 5s;
+  left: -700px;
+  z-index: 3;
+}
+
+#birdimg2{
+  height: 50px;
+  position: relative;
+  animation-name: bird2;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+  left: -700px;
+  z-index: 5;
+}
+
+/* The animation code */
+@keyframes bird {
+  0%   {left:-600px; top:-30px;}
+  100%  {left: 1400px; top:-90px;}
+}
+
+/* The animation code */
+@keyframes bird2 {
+  0%   {left:-600px; top:-50px;}
+  100%  {left: 1400px; top:-10px;}
+}
+
+
+#about{
+
+  z-index: 100;
+  background-color: #352D39;
+  postion: fixed;
+}
+/*
+#about-land{
+  position:relative;
+  width:1500px;
+  height:500px;
+  top: 50px;
+  left:-50px;
+}*/
+
+#sketch-area{
+  height:300px;
+  background-color: #D7666C;
+  z-index:30;
+}
+
+#sketch-area-stamps{
+  height:100px;
+  background-color: #E1B793;
+  z-index:30;
+}
+
+#sketch-area-canvas{
+  height:200px;
+  background-color: #FCFBE3;
+  z-index:30;
+}
+
+#about-monster-area{
+  height:300px;
+  background-color: #C5CDA0;
+  z-index:30;
+}
+
+#track-monster-area-title{
+  background-color: #A3BA96;
+  z-index:30;
+}
+
+#track-monster-area{
+  background-color: #A3BA96;
+  z-index:30;
+  padding:0px;
+}
+
+#footer{
+  height:300px;
+  background-color: #352D39;
+  z-index:30;
+}
+
+/*Paralax attempt*/
+
+#layer1img {
+  height: 370px;
+  z-index: 10;
+  position: absolute;
+  left: 0px; /* align left edge with center of viewport */
+  top: 90px;
+  margin-left: 0px; /* move left by half element's width */
+}
+
+#layer2img {
+  height: 500px;
+  z-index: 9;
+  position: absolute;
+  left: 50%;
+  top: 7px;
+  margin-left: 0px; /* move left by half element's width */
+}
+
+#layer3{
+  z-index: 8;
+  position: fixed;
+  left: 80%; /* align left edge with center of viewport */
+  top: 0;
+  width: 1200px;
+  margin-left: -700px;
+}
+
+#layer3img {
+  position: absolute;
+  top: 356px;
+  left: 0px;
+  height: 100px;
+  width: 700px;
+}
+
+#layer4{
+  z-index: 7;
+  position: fixed;
+  left: 80%; /* align left edge with center of viewport */
+  top: 0;
+  margin-left: -750px;
+}
+
+#layer4img {
+  position: absolute;
+  top: 180px;
+  /*left: 100px;*/
+  height: 350px;
+  width: 300px;
+}
+
+#layer5{
+  z-index: 6;
+  position: fixed;
+  left: 50%; /* align left edge with center of viewport */
+  top: 0;
+  margin-left: -700px;
+}
+
+#layer5img {
+  position: absolute;
+  top: 300px;
+  /*left: 100px;*/
+  height: 110px;
+  width: 1400px;
+}
+
+#layer6{
+  z-index: 5;
+  position: fixed;
+  left: 50%; /* align left edge with center of viewport */
+  top: 0;
+  margin-left: -700px;
+}
+
+
+#layer6img {
+  position: absolute;
+  top: 250px;
+  /*left: 100px;*/
+  height: 110px;
+  width: 1600px;
+
+}
+
+#layer7{
+  z-index: 4;
+  position: fixed;
+  left: 75%; /* align left edge with center of viewport */
+  top: 0;
+  margin-left: -200px;
+}
+
+
+#layer7img {
+  position: absolute;
+  top: 180px;
+  /*left: 100px;*/
+  height: 200px;
+  width: 200px;
+
+}
+#layer8{
+  z-index: 3;
+  position: fixed;
+  left: 35%; /* align left edge with center of viewport */
+  top: 0;
+  margin-left: -200px;
+}
+
+
+#layer8img {
+  position: absolute;
+  top: 100px;
+  /*left: 100px;*/
+  height: 400px;
+  width: 1300px;
+
+}
+
+#layer9{
+  z-index: 2;
+  position: fixed;
+  left: 0%; /* align left edge with center of viewport */
+  top: 0;
+  margin-left: -200px;
+}
+
+
+#layer9img {
+  position: absolute;
+  top: 70px;
+  /*left: 100px;*/
+  height: 470px;
+  width: 1300px;
+
+}
+
+#marker {
+  height: 100px;
+  z-index: 9;
+  position: fixed;
+  left: 70%;
+  top: 280px;
+  margin-left: 0px;
+}
+
+#marker1 {
+  height: 60px;
+  z-index: 9;
+  position: fixed;
+  left: 50%;
+  top: 260px;
+  margin-left: 0px;
+}
+
+#marker2 {
+  height: 40px;
+  z-index: 9;
+  position: fixed;
+  left: 15%;
+  top: 350px;
+  margin-left: 0px;
+}
+
+#about{
+  color: #FCFBE3;
+}
+
+#sketch-img{
+  z-index:2;
+  height:220px;
+}
+
+#sketch-text{
+  z-index:2;
+  position:absolute;
+  margin-left: 50px !important;
+  margin-top: 100px !important;
+}
+
+#track-img{
+  z-index:1;
+  height:220px;
+}
+#track-text{
+  z-index:2;
+  position:absolute;
+  margin-left: 65px !important;
+  margin-top: 100px !important;
+}
