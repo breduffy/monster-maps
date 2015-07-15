@@ -72,7 +72,8 @@
       };
 
     });
-
+    // $timeout(setUpDragAndDrop, 0);
+    // $timeout(setUpCanvasEasel, 0);
   };
 
   // MapController.$inject = ['mapFactory', 'appSettings'];
