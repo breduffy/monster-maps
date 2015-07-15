@@ -1,41 +1,4 @@
 
- <!-- Begin nav bar here -->
-<!--   <nav id="test-nav" class="navbar navbar-default">
-    <div class="container-fluid"> -->
-      <!-- Brand and toggle get grouped for better mobile display if you add more links!-->
-   <!--    <div class="navbar-header"> -->
-      <!--   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button> -->
-      <!--   <a class="navbar-brand" href="#"><img id="birdbrand" src="images/birdbrand.png" alt="layer 1"/></a>
-      </div> -->
-
-      <!-- Collect the nav links, forms, and other content for toggling -->
-     <!--  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-        <ul class="nav navbar-nav navbar-right">
-          <li id="nav-user-icon">
-            <a href="#">
-            </a>
-          </li>
-
-          <li> -->
-            <!-- <a href="#"><button type="button" data-toggle="modal" data-target="#uploadArt" class="js-signupform-button"> Sketch a Monster</button></a> -->
-
-            <!-- <a href="#"><button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
-            Upload Art
-            </button></a> -->
-          <!-- </li> -->
-
-      <!-- </div> --><!-- /.navbar-collapse -->
-    <!-- </div> --><!-- /.container-fluid -->
- <!--  </nav>  --><!--End Nav bar-->
-
-
-
   <!--Hero starts here-->
   <div id="hero" class="col-xs-12 paddingTop-xl">
       <!-- <a class="logo-test" href="#"><img id="birdbrand" src="images/birdbrand.png" alt="layer 1"/></a> -->
@@ -127,7 +90,20 @@
   <div id= "sketch-area" class="col-xs-12 padding-xl">
     <div id="sketch-area-text" class="col-xs-12 col-sm-8 padding-md">
       <h5 id="">Sketch A Monster</h5>
-      <h2 >Draw a sketch of your monster in the area below. Choose elements such as horns, eyes, and mouths to help your drawing along.</h2>
+      <ul>
+      <li>
+        <h2><strong>To Draw:</strong> Click, hold, and move the cursor.</h2>
+      </li>
+      </br>
+      <li>
+        <h2><strong>To Stamp:</strong> Drag an element into the area below to build your monster.</h2>
+      </li>
+      </br>
+        <ul>
+          <li><h1>Click again and drag to clone</h1></li>
+          <li><h1>Click twice and hold to move</h1></li>
+          <li><h1>Double click to erase</h1></li>
+        </ul>
     </div>
   </div>
 
@@ -137,10 +113,59 @@
     </div>
   </div>
 
-    <div id= "sketch-area-canvas" class="col-xs-12 padding-xl">
-      <div id="sketch-area-canvas-text" class="col-xs-12 col-sm-8 padding-md">
-        <h3 id="">this is where the canvas will go</h3>
-      </div>
+<!--   THESE ARE THE MONSTER STAMPS -->
+  <div id= "sketch-area-canvas" class="col-xs-12 padding-xl">
+    <div class="col-xs-4 col-sm-1">
+      <img id="image-1" class="dragImg" src='images/monster-parts/monster-parts-01.png'/>
+    </div>
+    <div class="col-xs-4 col-sm-1">
+      <img id="image-2" class="dragImg" src='images/monster-parts/monster-parts-02.png'/>
+    </div>
+    <div class="col-xs-4 col-sm-1">
+      <img id="image-3" class="dragImg" src='images/monster-parts/monster-parts-03.png'/>
+    </div>
+    <div class="col-xs-4 col-sm-1">
+      <img id="image-4" class="dragImg" src='images/monster-parts/monster-parts-04.png'/>
+    </div>
+    <div class="col-xs-4 col-sm-1">
+      <img id="image-5" class="dragImg" src='images/monster-parts/monster-parts-05.png'/>
+    </div>
+     <div class="col-xs-4 col-sm-1">
+      <img id="image-6" class="dragImg" src='images/monster-parts/monster-parts-06.png'/>
+    </div>
+    <div class="col-xs-4 col-sm-1">
+      <img id="image-7" class="dragImg" src='images/monster-parts/monster-parts-07.png'/>
+    </div>
+    <div class="col-xs-4 col-sm-1">
+      <img id="image-8" class="dragImg" src='images/monster-parts/monster-parts-08.png'/>
+    </div>
+     <div class="col-xs-4 col-sm-1">
+      <img id="image-9" class="dragImg" src='images/monster-parts/monster-parts-09.png'/>
+    </div>
+    <div class="col-xs-4 col-sm-1">
+      <img id="image-10" class="dragImg" src='images/monster-parts/monster-parts-10.png'/>
+    </div>
+    <div class="col-xs-4 col-sm-1">
+      <img id="image-11" class="dragImg" src='images/monster-parts/monster-parts-11.png'/>
+    </div>
+     <div class="col-xs-4 col-sm-1">
+      <img id="image-12" class="dragImg" src='images/monster-parts/monster-parts-12.png'/>
+    </div>
+    <div class="col-xs-4 col-sm-1">
+      <img id="image-13" class="dragImg" src='images/monster-parts/monster-parts-13.png'/>
+    </div>
+     <div class="col-xs-4 col-sm-1">
+      <img id="image-14" class="dragImg" src='images/monster-parts/monster-parts-14.png'/>
+    </div>
+    <div class="col-xs-4 col-sm-1">
+      <img id="image-15" class="dragImg" src='images/monster-parts/monster-parts-15.png'/>
+    </div>
+<!--     END MONSTER STAMPS -->
+
+<!--   THIS IS THE CANVAS TODO: MAKE WORK -->
+    <div id="dropHere" class="col-xs-12">
+      <canvas id="canvas" height="400"></canvas>
+    </div>
   </div>
 
   <!--Begin monster-area section-->
@@ -185,6 +210,9 @@
     <div id="track-monster-area-title-text" class="col-xs-12 col-sm-8 padding-md">
       <h5 id="">Track A Monster</h5>
       <h2> Click on a marker to view the monster last seen in that area.</h2>
+      <div class="bird">
+        <img id="birdimg1" src="images/bird_2.png" alt="layer 1"/>
+      </div>
     </div>
   </div>
 

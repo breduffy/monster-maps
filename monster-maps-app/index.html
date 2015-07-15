@@ -5,21 +5,18 @@
   <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
   <title>monster maps</title>
 
+  <!-- Bower and Angular Components-->
   <script src="app/libraries/lodash.min.js"></script>
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
   <script src="app/libraries/angular-google-maps.min.js"></script>
 
-
+  <!-- Font Awesome link-->
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <!-- <link rel="stylesheet" href="/stylesheets/font-awesome-animation.min.css"> -->
-<!--   Import the controllers -->
-  <script type='text/javascript' src='app/controllers/mapController.js'></script>
 
-  <!-- Loads JQuery library from the link-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-
-  <!-- Links with my javascript page -->
+  <!-- Loads JQuery UI library from the link-->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js"></script>
 
 
   <!-- Latest compiled and minified CSS -->
@@ -37,8 +34,11 @@
     <link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Archivo+Black' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
-    <!-- Link to font awesome -->
-    <link rel="style" href="style/font-awesome-animation.min.css">
+
+    <!-- Create Easel JS code -->
+  <script src="http://code.createjs.com/createjs-2013.12.12.min.js"></script>
+  <script src="app/scripts/easel.js" type="text/javascript"></script>
+
     <!-- Link to my main stylesheet -->
     <link rel="stylesheet" href="style/main.css">
 
@@ -53,14 +53,14 @@
   </div>
 
 
-<!--   <div id="map_canvas" ng-controller="mapController">
-    <script type="text/ng-template" id="searchbox.tpl.html">
-      <input type="text" placeholder="Search Box"></input>
-    </script>
-  </div> -->
+<!--  My JS Scripts-->
   <script src="app/app.js"></script>
   <script src="app/scripts/parallax.js" type="text/javascript"></script>
+  <script src="app/scripts/canvas-easel.js" type="text/javascript"></script>
+  <script src="app/scripts/dragAndDrop.js" type="text/javascript"></script>
   <script src="app/controllers/mapController.js"></script>
+
+
 
 </body>
 

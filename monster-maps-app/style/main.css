@@ -101,7 +101,6 @@
   left:-50px;
 }*/
 #sketch-area {
-  height: 250px;
   background-color: #D7666C;
   z-index: 30; }
 
@@ -111,7 +110,6 @@
   z-index: 30; }
 
 #sketch-area-canvas {
-  height: 200px;
   background-color: #FCFBE3;
   z-index: 30; }
 
@@ -934,6 +932,16 @@ a:hover {
 
 #footer {
   text-align: center; }
+
+#dropHere {
+  /*   width:400px;
+    height: 400px;*/
+  border: dotted 1px black;
+  z-index: 100;
+  /*   background-color: transparent;*/ }
+
+.dragImg {
+  height: 50px; }
 
 .angular-google-map-container {
   height: 400px; }
