@@ -14,7 +14,7 @@ function dropDirective() {
           //Pointing to the dragImg class in dropHere and add new class.
           $("#dropHere .dragImg").addClass("item-" + 1);
           //Remove the current class (ui-draggable and dragImg)
-          $("#dropHere .item-" + 1).removeClass("dragImg").addClass("ui-draggable");
+          $("#dropHere .item-" + 1).removeClass("dragImg").addClass("ui-draggable highlight");
           $(".item-" + 1).dblclick(function() {
             $(this).remove();
           });
@@ -38,4 +38,3 @@ function dropDirective() {
     }
   }
 }
-

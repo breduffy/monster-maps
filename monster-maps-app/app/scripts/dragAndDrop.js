@@ -1,4 +1,4 @@
-$(document).ready(function() {
+// $(document).ready(function() {
   //Make every clone image unique.
 
   // $("#dropHere").droppable({
@@ -19,18 +19,18 @@ $(document).ready(function() {
 
   // });
 
-  //Increase the z-index so the clones appear in the right order
-  var zIndex = 0;
+//   //Increase the z-index so the clones appear in the right order
+//   var zIndex = 0;
 
-  function make_draggable(elements) {
-    elements.draggable({
-      containment: 'parent',
-      start: function(e, ui) {
-        ui.helper.css('z-index', ++zIndex);
-      },
-      stop: function(e, ui) {}
-    });
-  }
+//   function make_draggable(elements) {
+//     elements.draggable({
+//       containment: 'parent',
+//       start: function(e, ui) {
+//         ui.helper.css('z-index', ++zIndex);
+//       },
+//       stop: function(e, ui) {}
+//     });
+//   }
 
-  console.log('setup happening');
-});
+//   console.log('setup happening');
+// });

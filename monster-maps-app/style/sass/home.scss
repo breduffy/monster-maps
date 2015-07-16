@@ -380,11 +380,13 @@
 .monster-map-area {
   background-color:#A3BA96;
   z-index: 10000;
+  // padding-left: 0px;
 }
 
 .monster-image{
   height: 200px;
-  background-color: white;
+  border: dotted 1px black;
+    // z-index:100;
 }
 
 .monster-information{
