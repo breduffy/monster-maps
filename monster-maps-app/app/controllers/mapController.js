@@ -59,6 +59,9 @@
         bitmap = new createjs.Bitmap(image);
         container.addChild(bitmap);
       });
+      //TO DO: Get image to open in a new window.
+      // open().document.write(image);
+      // return false;
     };
 
     // // map marker
