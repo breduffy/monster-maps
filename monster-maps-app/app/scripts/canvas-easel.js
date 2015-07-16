@@ -1,5 +1,4 @@
-$(document).ready(function() {
-
+$('#content').one('click', 'canvas', function() {
   var canvas, stage;
   var mouseTarget; // the display object currently under the mouse, or being dragged
   var dragStarted; // indicates whether we are currently in a drag operation
@@ -33,7 +32,6 @@ $(document).ready(function() {
   wrapper.addChild(drawing);
 
   var lastPoint = new createjs.Point();
-
   wrapper.addEventListener("mousedown", function(event) {
 
     // Store the position. We have to do this because we clear the graphics later.
@@ -41,8 +39,7 @@ $(document).ready(function() {
     lastPoint.y = event.stageY;
 
     // Listen for mousemove
-    event.addEventListener("mousemove", function(event) {
-
+    event.currentTarget.addEventListener("mousemove", function(event) {
       // Draw a round line from the last position to the current one.
       drawing.graphics.ss(6, "round").s("#352d39");
       drawing.graphics.mt(lastPoint.x, lastPoint.y);
