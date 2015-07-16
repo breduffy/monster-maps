@@ -8,12 +8,13 @@ function dropDirective() {
     link: function(scope, element) {
       element.droppable({
         drop: function(e, ui) {
-          console.log($(this));
+          // console.log($(this));
           $(this).append($(ui.helper).clone());
+
           //Pointing to the dragImg class in dropHere and add new class.
           $("#dropHere .dragImg").addClass("item-" + 1);
           //Remove the current class (ui-draggable and dragImg)
-          $("#dropHere .item-" + 1).removeClass("dragImg").addClass("ui-draggable ");
+          $("#dropHere .item-" + 1).removeClass("dragImg").addClass("ui-draggable");
           $(".item-" + 1).dblclick(function() {
             $(this).remove();
           });
@@ -37,3 +38,4 @@ function dropDirective() {
     }
   }
 }
+

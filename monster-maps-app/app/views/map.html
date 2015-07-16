@@ -259,8 +259,9 @@
 
 <!--   THIS IS THE CANVAS TODO: MAKE WORK -->
     <div id="dropHere" class="col-xs-12 droppable-area" drop-directive>
-      <canvas id="canvas" width="1200" height="400"></canvas>
+      <canvas id="canvas" width="1200" height="500" testdrawing-directive></canvas>
     </div>
+   <!--  <input type="checkbox" id="toggle" /><label for="toggle">Erase</label><br /> -->
   </div>
 
   <!--Begin monster-area section-->
@@ -301,7 +302,7 @@
 
 
    <!--Begin track-monster-area section-->
-  <div id= "track-monster-area-title" class="col-xs-12 padding-xl">
+  <div id= "track-monster-area-title" class="col-xs-12 paddingTop-xl paddingLeft-xl paddingRight-xl">
     <div id="track-monster-area-title-text" class="col-xs-12 col-sm-8 padding-md">
       <h5 id="">Track A Monster</h5>
       <h2> Click on a marker to view the monster last seen in that area.</h2>
@@ -311,34 +312,45 @@
     </div>
   </div>
 
-  <div id="track-monster-area" class="col-xs-12">
-    <div id="google-map" class="col-xs-12">
-      <ui-gmap-google-map center='map.center' zoom='map.zoom' draggable="true" options="options">
+  <div class="monster-map-area col-xs-12">
+    <div id="track-monster-area" class="col-xs-12 col-sm-6">
+      <div id="google-map" class="col-xs-12">
+        <ui-gmap-google-map center='map.center' zoom='map.zoom' draggable="true" options="options">
 
-        <ui-gmap-search-box template="searchbox.template" events="searchbox.events">
-        </ui-gmap-search-box>
+          <ui-gmap-search-box template="searchbox.template" events="searchbox.events">
+          </ui-gmap-search-box>
 
-        <ui-gmap-markers models="artLocations" coords="'self'" icon="'icon'">
-        </ui-gmap-markers>
+          <ui-gmap-markers models="artLocations" coords="'self'" icon="'icon'">
+          </ui-gmap-markers>
 
-        </ui-gmap-google-map>
-    </div>
+          </ui-gmap-google-map>
+      </div>
 
       <div id="map_canvas" ng-controller="mapController">
         <script type="text/ng-template" id="searchbox.tpl.html">
           <input type="text" placeholder="Search Box"></input>
         </script>
       </div>
+      </div>
 
- <!--    <div id="google-map-text" class="col-xs-12 col-sm-6">
-    </div> -->
-
+    <div class="view-a-monster-area col-xs-12 col-sm-6">
+      <div class="monster-image"></div>
+      <div class="monster-information marginTop-xl">
+        <h3> Name: </h3>
+        </br>
+        <h2> Location: </h2>
+        </br>
+        <h2> Description:  </h2>
+      </div>
+    </div>
+  </div>
   </div>
 
 
   <div id= "footer" class="col-xs-12 padding-xl textPrimary-white">
-    <div id="footer-text" class="animated pulse infinite">
+    <div id="footer-text" class="animated pulse infinite paddingTop-xl">
       <h1>Disclaimer: this project makes no sense. </h1>
+      </br>
       <h1>© Breanne Duffy 2015</h1>
     </div>
   </div>

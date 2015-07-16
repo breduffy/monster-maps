@@ -12,15 +12,27 @@ $(document).ready(function() {
     return false;
   });
 
+
+  //TO DO: Make it so these scroll to the div, not arbitrary length from top.
+  //getting messed up in angular
+
   //Scroll green pencil icon scroll to sketch area: DOES NOT WORK
-  // $('.green-icon-pencil').click(function(e) {
-  //   e.preventDefault();
-  //   $('html, body').animate({
-  //     scrollTop: $("#sketch-monster-area").offset().top
-  //   }, 500);
-  // });
+  $('.green-icon-pencil').click(function(e) {
+    $("html, body").animate({
+      scrollTop: 800
+    }, 500);
+    return false;
+  });
 
   // //Scroll green pencil icon scroll to track area: DOES NOT WORK
+  $('.green-icon-binoculars').click(function(e) {
+    $("html, body").animate({
+      scrollTop: 2200
+    }, 500);
+    return false;
+  });
+
+
   // $('.green-icon-pencil').click(function(e) {
   //   e.preventDefault();
   //   $('html, body').animate({

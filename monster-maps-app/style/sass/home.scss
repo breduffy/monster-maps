@@ -372,3 +372,22 @@
   margin-left: 100px !important;
   margin-top: 120px !important;
 }
+
+.view-a-monster-area{
+  z-index: 10000;
+}
+
+.monster-map-area {
+  background-color:#A3BA96;
+  z-index: 10000;
+}
+
+.monster-image{
+  height: 200px;
+  background-color: white;
+}
+
+.monster-information{
+  height: 300px;
+}
+
