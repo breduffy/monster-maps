@@ -42,6 +42,24 @@
 
     $scope.artLocations = [];
 
+    //This is the button for submitting the image
+    //TO DO: Get it to save the bitmaps added to the canvas
+    $scope.submitCanvas = function() {
+      alert('submitting');
+      var canvas = document.getElementById("canvas");
+      var stage = new createjs.Stage("canvas");
+      var container = new createjs.Container();
+      var bitmap;
+      stage.addChild(container);
+
+      var images = $('#dropHere > img');
+
+      //images.forEach(function(image) {
+      images.each(function(image) {
+        bitmap = new createjs.Bitmap(image);
+        container.addChild(bitmap);
+      });
+    };
 
     // // map marker
     // $scope.marker = {
@@ -57,6 +75,7 @@
     //     animation: 1 // 1: BOUNCE, 2: DROP
     //   }
     // };
+
 
     uiGmapGoogleMapApi.then(function(maps) {
       $scope.map = {

@@ -256,7 +256,7 @@
 <!--     END MONSTER STAMPS -->
 
 <!--   THIS IS THE CANVAS TODO: MAKE WORK -->
-    <div id="dropHere" class="col-xs-12 droppable-area" drop-directive>
+    <div id="dropHere" class="col-xs-12 droppable-area marginTop-lg" drop-directive>
       <canvas id="canvas" width="1200" height="500" testdrawing-directive></canvas>
     </div>
    <!--  <input type="checkbox" id="toggle" /><label for="toggle">Erase</label><br /> -->
@@ -289,15 +289,14 @@
     </form>
   </div>
 
-    <div id="monster-button-area" class="col-xs-9 col-sm-offset-1 col-sm-4 col-md-2 col-md-offset-0 padding-xl">
-      <a id="monster-button-background" class=" about-menu textPrimary-white" href="#/">
+    <div   id="monster-button-area" class="col-xs-9 col-sm-offset-1 col-sm-4 col-md-2 col-md-offset-0 padding-xl" >
+      <a id="monster-button-background" ng-click="submitCanvas()" class=" about-menu textPrimary-white">
         <h4 id="monster-button-text">Submit Monster!</h4>
-        <img class="monster-img" src="images/sketch.png"/>
+        <img id="monster-submit-button" class="monster-img" src="images/sketch.png"/>
       </a>
     </div>
       <!-- End monster input area -->
       </div>
-
 
    <!--Begin track-monster-area section-->
   <div id= "track-monster-area-title" class="col-xs-12 paddingTop-xl paddingLeft-xl paddingRight-xl">

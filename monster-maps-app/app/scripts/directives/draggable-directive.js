@@ -8,6 +8,10 @@ function dragDirective() {
     link: function(scope, element) {
       element.draggable({
         helper: "clone"
+        //Create counter
+        // start: function() {
+        //   counts[0]++;
+        // }
       });
     }
   }

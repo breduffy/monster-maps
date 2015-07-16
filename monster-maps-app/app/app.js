@@ -17,11 +17,11 @@
           templateUrl: 'app/views/map.html'
         })
 
-      $routeProvider
-        .when('/register', {
-          controller: 'registerController as registerController',
-          templateUrl: 'app/views/register.html'
-        })
+      // $routeProvider
+      //   .when('/register', {
+      //     controller: 'registerController as registerController',
+      //     templateUrl: 'app/views/register.html'
+      //   })
 
     }
   ]);

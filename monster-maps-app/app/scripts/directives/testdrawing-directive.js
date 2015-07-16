@@ -9,6 +9,8 @@ function testdrawingDirective() {
     link: function(scope, element) {
       var ctx = element[0].getContext('2d');
 
+
+
       // variable that decides if something should be drawn on mousemove
       var drawing = false;
 
