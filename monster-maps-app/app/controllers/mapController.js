@@ -46,16 +46,23 @@
     //TO DO: Get it to save the bitmaps added to the canvas
     $scope.submitCanvas = function() {
       alert('submitting');
+      //Set up the canvas and make it a stage
       var canvas = document.getElementById("canvas");
       var stage = new createjs.Stage("canvas");
+
+      //Create a new container to put the bitmaps in
       var container = new createjs.Container();
       var bitmap;
+      //Add the container to the stage
       stage.addChild(container);
 
+      //Put the images in the drop area into a variable
       var images = $('#dropHere > img');
 
+      //set the canvas to a variable and make it 2d ontext
       var c = document.getElementById("canvas");
       var ctx = c.getContext("2d");
+      //All current images have item-1 class
       var currentImages = document.getElementsByClassName("item-1");
 
       //This iterates through the images on the canvas
@@ -74,6 +81,7 @@
         container.addChild(bitmap);
       });
 
+      //Open the image in a new window
       var newWindow = $('#canvas')[0].toDataURL();
       window.open(newWindow);
     };

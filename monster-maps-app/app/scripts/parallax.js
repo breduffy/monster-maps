@@ -41,6 +41,7 @@ $(document).ready(function() {
   // });
 
   //scroll to sketch a monster
+  //Need to specify a content div on the main index
   $('#content').on('click', '#sketch-button', function(e) {
     e.preventDefault();
     $('html, body').animate({
@@ -55,6 +56,11 @@ $(document).ready(function() {
       scrollTop: $("#track-monster-area-title").offset().top
     }, 500);
   });
+
+
+  //PARALLAX!
+  // IDEA: the background div is fixed while the image has position absolute (CSS)
+  // The images in the foreground scroll faster than the images in the background
 
   /* Scroll event handler */
   $(window).bind('scroll', function(e) {

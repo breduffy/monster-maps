@@ -164,7 +164,9 @@
   z-index:30;
 }
 
-/*Paralax attempt*/
+/*Paralax layers*/
+// IDEA: the background div is fixed while the image has position absolute
+// The images in the foreground scroll faster than the images in the background
 
 #layer1img {
   height: 370px;

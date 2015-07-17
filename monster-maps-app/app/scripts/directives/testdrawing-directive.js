@@ -7,9 +7,8 @@ function testdrawingDirective() {
 
     restrict: "A",
     link: function(scope, element) {
+      //Make sure it's a 2D context
       var ctx = element[0].getContext('2d');
-
-
 
       // variable that decides if something should be drawn on mousemove
       var drawing = false;
@@ -18,6 +17,7 @@ function testdrawingDirective() {
       var lastX;
       var lastY;
 
+      //Bind the data on mouse down at x,y coordinates
       element.bind('mousedown', function(event) {
         if (event.offsetX !== undefined) {
           lastX = event.offsetX;
@@ -30,8 +30,11 @@ function testdrawingDirective() {
         // begins new line
         ctx.beginPath();
 
+        //Set drawing to true
         drawing = true;
       });
+
+      //On mouse move bind the coordinates
       element.bind('mousemove', function(event) {
         if (drawing) {
           // get current mouse position
@@ -51,6 +54,7 @@ function testdrawingDirective() {
         }
 
       });
+      //Stop the drawing on mouseup
       element.bind('mouseup', function(event) {
         // stop drawing
         drawing = false;
@@ -61,6 +65,7 @@ function testdrawingDirective() {
         element[0].width = element[0].width;
       }
 
+      //Set the drawing properties
       function draw(lX, lY, cX, cY) {
         // line from
         ctx.moveTo(lX, lY);
