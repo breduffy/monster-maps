@@ -15,11 +15,6 @@ function dropDirective() {
           $("#dropHere .dragImg").addClass("item-" + 1);
           //Remove the current class (ui-draggable and dragImg)
           $("#dropHere .item-" + 1).removeClass("dragImg").addClass("ui-draggable highlight");
-          var c = document.getElementById("canvas");
-          var ctx = c.getContext("2d");
-          var currentImages = document.getElementsByClassName("item-1");
-          //Uncomment this line in order to place an image in the upper-corner. This will save.
-          // ctx.drawImage(currentImages[currentImages.length - 1], 10, 10);
 
           $(".item-" + 1).dblclick(function() {
             $(this).remove();

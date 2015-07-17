@@ -54,32 +54,31 @@
 
       var images = $('#dropHere > img');
 
-      //images.forEach(function(image) {
+      var c = document.getElementById("canvas");
+      var ctx = c.getContext("2d");
+      var currentImages = document.getElementsByClassName("item-1");
+
+      //This iterates through the images on the canvas
+      //Gets the x and y coordinated
+      for (var i = 0; i < currentImages.length; i++) {
+        var x = currentImages[i].offsetLeft;
+        var y = currentImages[i].offsetTop;
+        console.log(x);
+        ctx.drawImage(currentImages[i], x, y);
+      }
+
+      //Create a bitmap from the images
+      //Add it as a child to the container
       images.each(function(image) {
         bitmap = new createjs.Bitmap(image);
         container.addChild(bitmap);
       });
-      //TO DO: Get image to open in a new window.
-      // open().document.write(image);
-      // return false;
+
+      var newWindow = $('#canvas')[0].toDataURL();
+      window.open(newWindow);
     };
 
-    // // map marker
-    // $scope.marker = {
-    //   id: 0,
-    //   coords: {
-    //     latitude: 7.0933,
-    //     longitude: 79.9989
-    //   },
-    //   options: {
-    //     //set this to true if you want the marker draggable
-    //     draggable: false,
-    //     title: 'The KVK Blog',
-    //     animation: 1 // 1: BOUNCE, 2: DROP
-    //   }
-    // };
-
-
+    //This is the google map controls
     uiGmapGoogleMapApi.then(function(maps) {
       $scope.map = {
         center: {
@@ -94,13 +93,8 @@
       };
 
     });
-    // $timeout(setUpDragAndDrop, 0);
-    // $timeout(setUpCanvasEasel, 0);
   };
 
-  // MapController.$inject = ['mapFactory', 'appSettings'];
-
-  // The Controller is part of the module.
   angular.module('mapApp').controller('mapController', MapController);
 
 })();
